@@ -1,0 +1,14 @@
+[
+  {
+    "tipoDocumento": "Cédula de ciudadanía",
+    "numeroDocumento": "1039454860",
+    "nombre": "Juan Pérez",
+    "email": "juan.perez@example.com"
+  },
+  {
+    "tipoDocumento": "Pasaporte",
+    "numeroDocumento": "AB1234567",
+    "nombre": "María Gómez",
+    "email": "maria.gomez@example.com"
+  }
+]

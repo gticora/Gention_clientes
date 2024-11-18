@@ -1,0 +1,51 @@
+<div class="container mt-4 p-4 border rounded bg-primary-subtle">
+  <h3 class="mb-3 text-primary">Resumen de Cliente</h3>
+  <div *ngIf="cliente; else noCliente">
+    <div class="form-group mb-3">
+      <label for="tipoDocumento" class="form-label text-primary">Tipo de Documento</label>
+      <input
+        id="tipoDocumento"
+        type="text"
+        class="form-control"
+        [value]="cliente.tipoDocumento"
+        disabled
+      />
+    </div>
+    <div class="form-group mb-3">
+      <label for="numeroDocumento" class="form-label text-primary">Número de Documento</label>
+      <input
+        id="numeroDocumento"
+        type="text"
+        class="form-control"
+        [value]="cliente.numeroDocumento"
+        disabled
+      />
+    </div>
+    <div class="form-group mb-3">
+      <label for="nombre" class="form-label text-primary">Nombre</label>
+      <input
+        id="nombre"
+        type="text"
+        class="form-control"
+        [value]="cliente.nombre"
+        disabled
+      />
+    </div>
+    <div class="form-group mb-3">
+      <label for="correo" class="form-label text-primary">Correo</label>
+      <input
+        id="correo"
+        type="text"
+        class="form-control"
+        [value]="cliente.email"
+        disabled
+      />
+    </div>
+    <button class="btn btn-primary w-100 rounded-pill" (click)="router.navigate(['/ingreso'])">
+      Volver
+    </button>
+  </div>
+  <ng-template #noCliente>
+    <p class="text-danger">No hay datos del cliente.</p>
+  </ng-template>
+</div>

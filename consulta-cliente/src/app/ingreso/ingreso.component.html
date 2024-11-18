@@ -1,0 +1,40 @@
+<div class="container mt-4 p-4 border rounded bg-primary-subtle">
+  <h3 class="mb-4">Consulta de Cliente</h3>
+  <p class="text-muted mb-4">Todos los campos son obligatorios</p>
+  <form>
+    <div class="form-group mb-3">
+      <label for="tipoDocumento" class="form-label  text-primary">Tipo de Documento</label>
+      <select
+        id="tipoDocumento"
+        class="form-select"
+        [(ngModel)]="tipoDocumento"
+        name="tipoDocumento"
+        (change)="validarCampos()"
+      >
+        <option value="" disabled selected>Seleccione</option>
+        <option value="Cédula de ciudadanía">Cédula de ciudadanía</option>
+        <option value="Pasaporte">Pasaporte</option>
+      </select>
+    </div>
+    <div class="form-group mb-4">
+      <label for="numeroDocumento" class="form-label  text-primary">Número de Documento</label>
+      <input
+        id="numeroDocumento"
+        type="text"
+        class="form-control"
+        [(ngModel)]="numeroDocumento"
+        name="numeroDocumento"
+        (input)="validarCampos()"
+        maxlength="11"
+        placeholder="Número de Documento"
+      />
+    </div>
+    <button
+      class="btn btn-primary w-100 rounded-pill"
+      [disabled]="!botonHabilitado"
+      (click)="consultarCliente()"
+    >
+      Buscar
+    </button>
+  </form>
+</div>
