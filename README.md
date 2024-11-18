@@ -1,4 +1,4 @@
-# JAVA Spring & ANgular Management
+# JAVA Spring & Angular
 
 Aplicación de gestión de clientes con un frontend en Angular y un backend en spring.
 
