@@ -23,7 +23,8 @@ El frontend está desarrollado con Angular, mientras que el backend está constr
 - Instalar dependencias de maven mvn install.
 
 ## Configuración y Ejecución
-1. **Backend**: por el puerto 8090 -> http://localhost:8090/api/clientes?tipoDocumento=C&numeroDocumento=23445322
+1. En la ruta del backend bakend_gestion_clientes\out\artifacts\BACKEND_REST_jar\BACKEND_REST se encuentra el JAR para la ejecucion del aplicativo backend
+2. **Backend**: por el puerto 8090 -> http://localhost:8090/api/clientes?tipoDocumento=C&numeroDocumento=23445322
 ![image](https://github.com/user-attachments/assets/91a05fec-6b8b-4c5a-b414-c00ca3d2523b)
    
 3. **Frontend**: por el puerto 4200 -> http://localhost:4200/
