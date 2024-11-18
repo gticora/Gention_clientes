@@ -1,0 +1,39 @@
+# Backend REST API
+
+Este proyecto es una API REST desarrollada con **Spring Boot 3.3.5** y **JDK 21**. Proporciona un servicio básico que permite consultar información de un cliente simulada.
+
+## Requisitos
+
+Para ejecutar este proyecto localmente, necesitas tener instalados los siguientes programas:
+
+- **JDK 21** o superior (para compilar y ejecutar el proyecto).
+- **Maven** (para gestionar las dependencias y construir el proyecto).
+- **IDE** (opcional) como **IntelliJ IDEA**, **Eclipse**, o cualquier editor de texto que soporte Java.
+
+## Instalación
+
+1. **Clona este repositorio**:
+
+   Si aún no has clonado el repositorio, usa el siguiente comando:
+
+   ```bash
+   git clone <URL_DEL_REPOSITORIO>
+2. **Navega al directorio del proyecto**
+    Entra en la carpeta donde se encuentra el proyecto: cd BACKEND_REST
+3. **Instala las dependencias con Maven**
+    Si no tienes Maven instalado, sigue estas instrucciones.
+    Luego, para instalar las dependencias del proyecto, corre el siguiente comando:mvn install
+## Ejecutar el Proyecto
+
+1. **Iniciar proyecto**
+    mvn spring-boot:run
+2. **Verificar el funcionamiento**
+    http://localhost:8090/api/clientes?tipoDocumento=C&numeroDocumento=23445322
+    si todo esta bien retorna:
+    {
+      "nombre": "Juan",
+      "apellido": "Perez",
+      "cedula": "123456789",
+      "direccion": "Calle 123",
+      "ciudad": "Bogotá"
+    }
